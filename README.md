@@ -1,8 +1,6 @@
 # sp500-vix-analysis
-Time series analysis of the S&P 500 and VIX daily price data, 2020–2025 
-Learning excel functions and using my economics degree (currently am a senior studying BS econ), this project is to explore the relationship between the VIX and S&P500 using time series regression analysis. 
-
-I found that when regressing  ΔS&P_t = α + β * ΔVIX_t + ε, β=-.41 This relationship has been well documented already. 
-The average difference in closing price between both vix and s&p500 is covariant stationary - if you just look at it and not test it.
-The variance is not stationary, thus, this model suffers from heteroskedasticity. 
-
+This project explores the relationship between the S&P 500 and the VIX using time series regression analysis. As a senior pursuing a B.S. in Economics, I used this project to apply econometric concepts while improving my technical proficiency in Excel.
+The core regression model is:
+ΔS&Pₜ = α + β * ΔVIXₜ + ε
+I found β ≈ −0.41, which confirms the well-documented inverse relationship between changes in market volatility (VIX) and equity prices (S&P 500).
+Preliminary stationarity checks suggest that the mean of the differenced closing prices (ΔS&P and ΔVIX) appears stationary, though not formally tested. However, variance is clearly not constant over time, indicating the presence of heteroskedasticity, a known feature of financial time series. This limitation is noted in the interpretation of the model.
