@@ -5,6 +5,7 @@ This confirms the well-documented inverse relationship between equity markets an
 How do changes in the VIX affect daily movements in the S&P?
 I ran an OLS regression of the S&P on changes in the VIX between 2020 and 2025. 
 Model: ΔS&P = α + β * ΔVIX + ε
+
 R²=0.1743	~17.4% of the variation in S&P changes is explained by VIX changes 
 β =−0.498	As VIX increases by 1 point, S&P decreases by ~0.50 points on average
 Standard Error=0.0306	
